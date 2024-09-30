@@ -1,0 +1,252 @@
+/* App.jsx */
+.container {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  margin-bottom: 10px 0;
+  z-index: 1000;
+}
+
+/* Navbar.jsx */
+.custom-navbar button {
+  padding-left: 10px;
+}
+
+.nav-link:hover {
+  filter: drop-shadow(0px 0px 0.5px rgb(255, 255, 255)) contrast(120%);
+  font-size: 105%;
+}
+
+/* Botón de carrito */
+.custom-cart-button {
+  background-color: rgb(114, 39, 4);
+  color: rgb(255, 214, 103);
+  font-weight: bold;
+  border: 2.5px dotted rgb(255, 255, 255);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-cart-button:hover {
+  background-color: rgb(255, 214, 103);
+  color: rgb(114, 39, 4);
+  border: 2.5px dotted rgb(88, 39, 4);
+}
+
+.custom-cart-button-outline {
+  background-color: transparent;
+  color: #7777;
+  border: 2px solid #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-cart-button-outline:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.custom-cart-button-outline:active {
+  background-color: #000000;
+  color: white;
+}
+
+/* Header.jsx */
+.custom-header {
+  margin-top: 56px;
+  position: relative;
+  background-image: url('./assets/img/Header.jpg');
+  background-size: cover;
+  height: 410px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.custom-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.custom-header h1, .custom-header p {
+  position: relative;
+  z-index: 2;
+}
+
+.custom-header p {
+  font-weight: 600;
+}
+
+.line-header {
+  width: 60%;
+  margin: 0.5rem auto;
+  border-bottom: 1px solid white;
+}
+
+/* Home.jsx y CardPizza.jsx */
+.card-container, .card-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 70px;
+  margin: 25px 0;
+  justify-content: center;
+}
+
+.card-container-2 {
+  padding-bottom: 10px;
+}
+
+.ingredientes {
+  text-align: center;
+}
+
+.ingredientes .ingredientes-texto {
+  padding: 0;
+  margin: 2px;
+}
+
+.ingredientes-titulo {
+  font-size: 1.4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+.precio {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.vermas-anadir {
+  display: flex;
+  justify-content: center;
+  gap: 30%;
+}
+
+.quantity-display {
+  font-size: 1.2rem;
+  margin: 0 2px;
+}
+
+/* Footer.jsx */
+.footer {
+  display: flex;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 65px;
+  background-color: rgb(33, 37, 41);
+  color: #fff;
+  text-align: center;
+  line-height: 65px;
+  justify-content: center;
+}
+
+/* RegisterPage.jsx, LoginPage.jsx, Profile.jsx, NotFound.jsx */
+.register-container, .login-container, .profile-container, .not-found-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0, 200px);
+}
+
+.profile-container, .not-found-container {
+  flex-direction: column;
+}
+
+.formulario {
+  width: 500px;
+}
+
+/* Cart.jsx */
+.carrito-container {
+  padding-bottom: 100px;
+  padding-top: 70px;
+  background-image: url(./assets/img/Header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.507);
+  background-blend-mode: overlay;
+  min-height: 100vh;
+}
+
+.pagar, .carrito-container h2, .sin-pizzas.cart p {
+  color: white;
+  font-weight: 650;
+  filter: drop-shadow(4px 4px 2px black);
+  padding-left: 20px;
+}
+
+.empty-cart-message {
+  color: white;
+  padding-left: 20px;
+}
+
+.cantidad-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 2px;
+}
+
+/* Pizza.jsx */
+.pizza-details-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+.precio-details {
+  text-align: center;
+  font-weight: 600;
+}
+
+.precio-details p {
+  transform: translate(0, 5px);
+}
+
+.ver-mas {
+  transform: translate(0, -10px);
+}
+
+.cada-pizza {
+  padding-top: 80px;
+  text-align: center;
+}
+
+/* Error (Pizza.jsx) */
+.error-container {
+  padding-top: 80px;
+  text-align: center;
+  transform: translate(0, 50%);
+}
+
+/* Elementos globales */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+}
