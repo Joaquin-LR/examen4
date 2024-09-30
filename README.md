@@ -1,7 +1,7 @@
 <h1>Examen 4: JWT</h1>
 <p>Módulo 4: React (68) > Hito 8 - Pizzería Mamma Mía</p>
 
-<h2>Instrucciones para la visualización completa</h2>
+<h2>Instrucciones para la visualización completa 👁️</h2>
 <ol>
  <li><p>Descargar y extraer ZIP.</p></li>
  <li><p>Abrir carpeta con Visual Studio Code</p></li>
